@@ -10,7 +10,7 @@ namespace CriticalThinking_Computer_Proj
     {
         public double totalStorage;
         public double availableStorage;
-
+        public List<Applications> applicationsInHardDrive;
 
 
 

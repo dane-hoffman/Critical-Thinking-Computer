@@ -12,7 +12,7 @@ namespace CriticalThinking_Computer_Proj
         public string applicationType;
         public double requiredRAM;
         public double requiredStorage;
-
+        
 
         public Applications()
         {
