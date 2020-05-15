@@ -10,6 +10,8 @@ namespace CriticalThinking_Computer_Proj
     {
         static void Main(string[] args)
         {
+
+
         }
     }
 }

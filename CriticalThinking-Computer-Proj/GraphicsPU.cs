@@ -8,7 +8,19 @@ namespace CriticalThinking_Computer_Proj
 {
     class GraphicsPU
     {
-        string manufacturer;
-        double effectiveMemory;
+        public string manufacturer;
+        public double effectiveMemory;
+
+
+
+
+
+
+        public GraphicsPU(string manufacturer, double effectiveMemory)
+        {
+            this.manufacturer = manufacturer;
+            this.effectiveMemory = effectiveMemory;
+
+        }
     }
 }

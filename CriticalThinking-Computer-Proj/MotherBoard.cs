@@ -31,9 +31,5 @@ namespace CriticalThinking_Computer_Proj
         }
 
 
-
-
-
-
     }
 }

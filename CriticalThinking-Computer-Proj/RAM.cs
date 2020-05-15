@@ -8,9 +8,18 @@ namespace CriticalThinking_Computer_Proj
 {
     class RAM
     {
-        double totalGigabytes;
-        string brand;
+        public double totalGigabytes;
+        public string brand;
 
+
+
+        public RAM(double totalGigabytes, string brand)
+        {
+            this.totalGigabytes = totalGigabytes;
+            this.brand = brand;
+
+
+        }
 
 
     }

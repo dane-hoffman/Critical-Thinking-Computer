@@ -8,8 +8,21 @@ namespace CriticalThinking_Computer_Proj
 {
     class HardDrive
     {
-        double totalStorage;
-        double availableStorage;
+        public double totalStorage;
+        public double availableStorage;
+
+
+
+
+        public HardDrive(double totalStorage, double availableStorage)
+        {
+            this.totalStorage = totalStorage;
+            this.availableStorage = availableStorage;
+
+
+        }
+
+
 
 
     }

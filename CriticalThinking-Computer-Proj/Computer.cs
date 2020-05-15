@@ -8,5 +8,7 @@ namespace CriticalThinking_Computer_Proj
 {
     class Computer
     {
+
+
     }
 }

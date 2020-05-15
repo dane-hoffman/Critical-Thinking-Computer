@@ -8,8 +8,23 @@ namespace CriticalThinking_Computer_Proj
 {
     class CentralPU
     {
-        string manufacturer;
-        string name;
+        public string manufacturer;
+        public string name;
+
+
+
+
+
+        public CentralPU(string manufacturer, string name)
+        {
+            this.manufacturer = manufacturer;
+            this.name = name;
+
+
+        }
+
+
+
 
     }
 }
