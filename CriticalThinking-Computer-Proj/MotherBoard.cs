@@ -8,10 +8,32 @@ namespace CriticalThinking_Computer_Proj
 {
     class MotherBoard
     {
-        string manufacturer;
-        CentralPU processor;
-        RAM temporaryMemory;
-        HardDrive storage;
-        GraphicsPU graphics;
+        public string manufacturer;
+        public CentralPU processor;
+        public RAM temporaryMemory;
+        public HardDrive storage;
+        public GraphicsPU graphics;
+
+
+
+
+
+
+        public MotherBoard(string manufacturer, RAM ram, CentralPU cpu, GraphicsPU gpu, HardDrive hardDrive)
+        {
+            this.manufacturer = manufacturer;
+            temporaryMemory = ram;
+            processor = cpu;
+            storage = hardDrive;
+            graphics = gpu;
+
+
+        }
+
+
+
+
+
+
     }
 }
