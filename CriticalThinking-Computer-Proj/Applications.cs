@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CriticalThinking_Computer_Proj
 {
-    class Applications
+    public abstract class Applications
     {
         public string applicationName;
         public string applicationType;

@@ -15,7 +15,6 @@ namespace CriticalThinking_Computer_Proj
 
 
 
-
         public CentralPU(string manufacturer, string name)
         {
             this.manufacturer = manufacturer;
@@ -26,33 +25,32 @@ namespace CriticalThinking_Computer_Proj
 
         public void ProcessInstall(Applications application, HardDrive hardDrive, RAM ram)
         {
-                 if (CheckRequirements == true)
-                 {
-                    hardDrive.applicationsInHardDrive.Add(application);
-                 }
+
+            if (CheckRequirements(application,hardDrive,ram))
+            {
+                hardDrive.applicationsInHardDrive.Add(application);
+
+            }
+                
+            else
+            {
+                Console.WriteLine("Error: system does not have enough RAM access memory");
+            }
+
+        }
+
+            public bool CheckRequirements(Applications application, HardDrive hardDrive, RAM ram)
+            {
+                if (ram.totalGigabytes > application.requiredRAM)
+                {
+                    return true;
+                }
                 else
                 {
-                    Console.WriteLine("Error: system does not have enough RAM access memory");
+                    return false;
                 }
 
+            }
 
-
-
-            
-
-
-        }
-
-        public bool CheckRequirements true (Applications application, HardDrive hardDrive, RAM ram)
-        {
-            bool ram.totalGigabytes > application.requiredRAM = true;
-
-
-
-
-        }
-
-
-
-    }
+}
 }
