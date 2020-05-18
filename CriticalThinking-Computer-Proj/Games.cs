@@ -12,7 +12,10 @@ namespace CriticalThinking_Computer_Proj
 
 
         public Games()
-        { 
+        {
+            Applications game = new Games();
+
+
         
         }
 

@@ -23,10 +23,10 @@ namespace CriticalThinking_Computer_Proj
 
         }
 
-        public void ProcessInstall(Applications application, HardDrive hardDrive, RAM ram)
+        public void ProcessInstall(Applications application, HardDrive hardDrive, RAM ram, GraphicsPU gpu, Games game)
         {
 
-            if (CheckRequirements(application,hardDrive,ram))
+            if (CheckRequirements(application,hardDrive,ram,gpu,game))
             {
                 hardDrive.applicationsInHardDrive.Add(application);
 
@@ -39,9 +39,9 @@ namespace CriticalThinking_Computer_Proj
 
         }
 
-            public bool CheckRequirements(Applications application, HardDrive hardDrive, RAM ram)
+            public bool CheckRequirements(Applications application, HardDrive hardDrive, RAM ram, GraphicsPU gpu, Games game)
             {
-                if (ram.totalGigabytes > application.requiredRAM)
+                if (ram.totalGigabytes > application.requiredRAM && gpu.effectiveMemory > game.requiredEffectiveMemory)
                 {
                     return true;
                 }
