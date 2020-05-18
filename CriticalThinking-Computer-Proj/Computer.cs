@@ -9,13 +9,13 @@ namespace CriticalThinking_Computer_Proj
 {
     class Computer
     {
-        MotherBoard motherboard;
-        HardDrive hardDrive;
-        CentralPU cpu;
-        RAM ram;
-        GraphicsPU gpu;
-        Applications applications;
-        Games game;
+        public MotherBoard motherboard;
+        public HardDrive hardDrive;
+        public CentralPU cpu;
+        public RAM ram;
+        public GraphicsPU gpu;
+        public Applications applications;
+        public Games game;
 
 
         public Computer()
@@ -31,7 +31,6 @@ namespace CriticalThinking_Computer_Proj
 
         public void RunComputer()
         {
-            cpu.CheckRequirements(applications, hardDrive, ram, gpu, game);
             cpu.ProcessInstall(applications, hardDrive,ram, gpu,game);
 
         }
