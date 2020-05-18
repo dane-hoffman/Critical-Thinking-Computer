@@ -12,7 +12,7 @@ namespace CriticalThinking_Computer_Proj
         static void Main(string[] args)
         {
             Computer computer = new Computer();
-            computer.BuildComputer();
+            computer.RunComputer();
             
 
         }
