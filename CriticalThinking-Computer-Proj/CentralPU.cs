@@ -26,19 +26,29 @@ namespace CriticalThinking_Computer_Proj
 
         public void ProcessInstall(Applications application, HardDrive hardDrive, RAM ram)
         {
+                 if (CheckRequirements == true)
+                 {
+                    hardDrive.applicationsInHardDrive.Add(application);
+                 }
+                else
+                {
+                    Console.WriteLine("Error: system does not have enough RAM access memory");
+                }
+
+
+
 
             
 
+
         }
 
-        public bool CheckRequirements(Applications application, HardDrive hardDrive, RAM ram)
+        public bool CheckRequirements true (Applications application, HardDrive hardDrive, RAM ram)
         {
-            if (ram.totalGigabytes > application.requiredRAM)
-            {
+            bool ram.totalGigabytes > application.requiredRAM = true;
 
 
 
-            }
 
         }
 

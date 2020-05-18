@@ -33,22 +33,22 @@ namespace CriticalThinking_Computer_Proj
 
 
 
-        //public void InstallApplication(Applications applications)
-        //{
+        public void InstallApplication(Applications applications)
+        {
 
-        //    if(temporaryMemory.totalGigabytes > applications.requiredRAM)
-        //    {
-        //        storage.applicationsInHardDrive.Add(applications);
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("Error: system does not have enough RAM access memory);
-        //    }
-            
-
+            if (temporaryMemory.totalGigabytes > applications.requiredRAM)
+            {
+                storage.applicationsInHardDrive.Add(applications);
+            }
+            else
+            {
+                Console.WriteLine("Error: system does not have enough RAM access memory");
+            }
 
 
-        //}
+
+
+        }
 
     }
 }
